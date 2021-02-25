@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemple 2 : AJAX avec jQuery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Exemple 2 : AJAX avec jQuery</h1>
+
+      <p>
+        À l'aide des ressources (dépôt du cours, documentation fournie en lien,
+        et toutes autres ressources disponible que vous jugerez pertinentes)
+        effectuez une requête (GET ou POST) en Ajax jQuery, puis après
+        traitement (PHP par exemple) afficher une donnée de réponse sur la même
+        page.
+      </p>
+
+      <div class="my-5" id="afficher">
+        This message will change, like everything in life.
+      </div>
+
+      <form action="post.php" method="post">
+        <div class="mb-3">
+          <label for="yourName" class="form-label">What's your name?</label>
+          <input
+            type="text"
+            class="form-control"
+            id="yourName"
+            name="yourName"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary" id="button1">
+          Get me that Post
+        </button>
+      </form>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
